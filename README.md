@@ -1,6 +1,8 @@
 Datomic Browser
 ===============
 
+Create and explore Datomic in-memory databases.
+
 Build
 -----
 
