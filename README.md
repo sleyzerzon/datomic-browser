@@ -6,6 +6,10 @@ Create and explore Datomic in-memory databases.
 Build
 -----
 
+Before building Datomic Browser, install Datomic into your local Maven repo. In your Datomic 0.1.2753 install directory, do:
+
+    mvn install:install-file -DgroupId=com.datomic -DartifactId=datomic -Dfile=datomic-0.1.2753.jar -DpomFile=pom.xml
+
 To build the executable war, execute:
 
     mvn clean package -P executable-war
