@@ -1,5 +1,5 @@
-Datomic Browswer
-================
+Datomic Browser
+===============
 
 Build
 -----
