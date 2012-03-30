@@ -11,7 +11,7 @@
     <packaging>war</packaging>
 
     <name>Datomic Browser</name>
-    <description>A simple browser of data in a Datomic.</description>
+    <description>A simple browser for Datomic in-memory databases.</description>
 
     <url>http://www.jmolly.com/</url>
 
@@ -35,6 +35,16 @@
                 <directory>${project.basedir}/src/main/resources</directory>
             </resource>
         </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <dependencies>

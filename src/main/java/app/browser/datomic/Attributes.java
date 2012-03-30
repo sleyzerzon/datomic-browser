@@ -43,17 +43,17 @@ public final class Attributes {
 
     private static List<Entity> toSortedEntities(Collection<List<Object>> attributes, final Database db) {
         final List<Entity> entities = Lists.newArrayList(
-                Collections2.transform(attributes, new Function<List<Object>, Entity>() {
-                    @Override
-                    public Entity apply(List<Object> result) {
-                        return db.entity(result.get(0));
-                    }
-                })
+            Collections2.transform(attributes, new Function<List<Object>, Entity>() {
+                @Override
+                public Entity apply(List<Object> result) {
+                return db.entity(result.get(0));
+            }
+        })
         );
         Collections.sort(entities, new Comparator<Entity>() {
             @Override
             public int compare(Entity a, Entity b) {
-                return ((Long) a.get(":db/id")).compareTo((Long) b.get(":db/id"));
+            return ((Long) a.get(":db/id")).compareTo((Long) b.get(":db/id"));
             }
         });
         return entities;
