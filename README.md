@@ -4,7 +4,7 @@ Datomic Browser
 Create and explore Datomic in-memory databases.
 
 A light, simple Datomic browser. It is an executable war, easily run using java -jar.
-You can create and manage Datomic in-memory database. You can full text search over all of your entities.
+You can create and manage Datomic in-memory databases. You can full text search over all of your entities.
 You can click through to referents and referrers.
 
 Prerequisites
